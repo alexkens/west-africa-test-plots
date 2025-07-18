@@ -1,0 +1,2 @@
+- a little data science for shining a light on west african economic developoments, especially on the 5 countries Mali, Burkina Faso, Niger, Guinea and Gabon, which got under military juntas in the years 2020 - 2023
+- inspiration was an article by APRI: https://afripoli.org/military-power-grab-in-west-africa-exploiting-the-domestic-rot-and-the-hegemonic-crisis

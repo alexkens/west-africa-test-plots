@@ -12,7 +12,7 @@ async function plot_country(country) {
     
 
     // Declare the chart dimensions and margins.
-    const margin = { top: 70, bottom: 40, right: 30, left: 80 }
+    const margin = { top: 70, bottom: 40, right: 30, left: 100 }
     const width = 1200 - margin.left - margin.right;
     const height = 500 - margin.top - margin.bottom;
 
@@ -39,7 +39,7 @@ async function plot_country(country) {
         .attr("text-anchor", "middle")
         .style("font-size", "25px")
         .style("font-weight", "bold")
-        .text("Gross Domestic Product of " + country);
+        .text("Gross domestic product of " + country);
 
     // parse data
     const string = "gdp_total_annual_data.csv";
@@ -63,10 +63,23 @@ async function plot_country(country) {
 
     svg.append("g")
         .attr("transform", `translate(0,${height})`)
-        .call(d3.axisBottom(x).tickFormat(d3.format("d")));
+        .call(d3.axisBottom(x).tickFormat(d3.format("d")))
+    
+    const x_label = "Year"
+    const y_label = "USD"
+    svg.append("text")
+        .text(x_label)
+        .attr("x", width / 2)
+        .attr("y", height + margin.bottom);
+    svg.append("text")
+        .text(y_label)
+        .attr("class", "axis-label")
+        .attr("x", - margin.left)
+        .attr("y", height / 2);
+        //.attr("rotate", -20);
 
     svg.append("g")
-    .call(d3.axisLeft(y));
+        .call(d3.axisLeft(y));
 
 
     const line = d3.line()
@@ -82,5 +95,5 @@ async function plot_country(country) {
 }
 
 
-const country_array = ["Mali", "Burkina Faso", "Niger", "Gabon", "Guinea"]
+const country_array = ["Mali", "Burkina Faso", "Niger", "Gabon", "Guinea", "United States"]
 country_array.forEach(plot_country)
