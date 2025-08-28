@@ -1,6 +1,6 @@
 import * as d3 from "https://cdn.jsdelivr.net/npm/d3@7/+esm";
 
-function whatis (value) {
+export function whatis (value) {
   return Object.prototype.toString.call(value)
     .replace(/^\[object\s+([a-z]+)\]$/i, '$1')
     .toLowerCase();
