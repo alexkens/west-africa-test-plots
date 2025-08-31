@@ -4,14 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" type="text/css" href="css/home.css">
 </head>
 <body>
+
+  <div class="grid grid-cols-2">
+
+    <nav>
+
+      <ul>
+        <li><a>Start</a></li>
+        <li><a>Profil</a></li>
+        <li><a>Github</a></li>
+        <li><a>Skills</a></li>
+        <li><a>Experience</a></li>
+        <li><a>Additional Experience</a></li>
+        <li><a>Downloads</a></li>
+      </ul>
+
+    </nav>
+
+    <div>
+
+      <header class="flex">
+      
+        <search>
+          <form action="">
+            <label for="page-filter">Filter page: </label>
+            <input class="border" type="search" id="page-filter">
+            <button class="border rounded-sm" type="submit">Search</button>
+          </form>
+        </search>
+
+        <div>Darkmode</div>
+        <div>Eng</div>
+
+      </header>
+
+      <main>
+
+        <section id="hero">
+
+          <img src="">
+          <div>
+            <p>Programmer</p>
+            <p>Web-Developer</p>
+            <p>Computer Scientist</p>
+          </div>
+
+        </section>
+
+        <section id="profil">
+
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus enim reiciendis aspernatur aperiam harum rerum doloribus, placeat nesciunt maiores corrupti ducimus asperiores quo. Earum, atque ex reprehenderit qui sed maxime.</p>
+            <img src="">
+          </div>
+
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus enim reiciendis aspernatur aperiam harum rerum doloribus, placeat nesciunt maiores corrupti ducimus asperiores quo. Earum, atque ex reprehenderit qui sed maxime.</p>
+            <img src="">
+          </div>
+
+          <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus enim reiciendis aspernatur aperiam harum rerum doloribus, placeat nesciunt maiores corrupti ducimus asperiores quo. Earum, atque ex reprehenderit qui sed maxime.</p>
+            <img src="">
+          </div>
+
+        </section>
+
+        <section id="github">
+          <div class="grid">
+
+            <div class="flex">
+              <h3>title</h3>
+              <img src="">
+              <iframe></iframe>
+            </div>
+
+          </div>
+
+
+        </section>
+        <section id="skills"></section>
+        <section id="experience"></section>
+        <section id="add-experience"></section>
+        <section id="downloads"></section>
+
+      </main>
+
+    </div>
+
+    <footer></footer>
+
+  </div>
+
     
-    <div class="my-4 flex h-30 w-full items-center justify-center rounded-md border-2 border-violet-600 bg-violet-200 p-4">
-  <h1 class="text-center text-white font-fraktur text-4xl">Hello World</h1>
-</div>
+
+
+  
 
 
 </body>
